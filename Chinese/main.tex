@@ -1,0 +1,52 @@
+%!TEX program = xelatex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                         %
+% Author: Gabriel Zhong                   %
+% Date: 2022/6/13                         %
+%                                         %
+% Comment:                                %
+% Sublime Text with LatexTools installed, %
+% use Command+B to complie                %
+%                   or                    %
+% use make to compile                     %
+%                                         %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[UTF8, fontset=none]{ctexart}
+% Setup font
+% English
+\setmainfont{SF Pro Text Regular}[
+	BoldFont = SF Pro Text Bold
+]
+\setsansfont{SF Pro Display Regular}[
+	BoldFont = SF Pro Text Bold
+]
+\setmonofont{SF Mono Regular}
+% Chinese
+\setCJKmainfont{PingFang SC Light}[
+  BoldFont       = PingFang SC Medium,
+  ItalicFont     = PingFang SC Thin,
+  BoldItalicFont = PingFang SC Regular
+]
+\setCJKsansfont{PingFang SC Light}[
+  BoldFont       = PingFang SC Medium,
+  ItalicFont     = PingFang SC Thin,
+  BoldItalicFont = PingFang SC Regular
+]
+\setCJKmonofont{SF Mono Regular}
+% Title
+\title{这是标题}
+\author{作者}
+% Document
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+\part{第 1 部分}
+\section{第 1 节}
+\subsection{第 1.1 小节}
+\subsubsection{第 1.1.1 小节}
+\paragraph{这} 是一个段落。
+\subparagraph{这} 是一个子段落。
+\end{document}

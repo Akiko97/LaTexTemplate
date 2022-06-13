@@ -1,0 +1,95 @@
+%!TEX program = xelatex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                         %
+% Author: Gabriel Zhong                   %
+% Date: 2022/6/13                         %
+%                                         %
+% Comment:                                %
+% Sublime Text with LatexTools installed, %
+% use Command+B to complie                %
+%                   or                    %
+% use make to compile                     %
+%                                         %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% URL: https://www.overleaf.com/learn/latex/Beamer
+
+\documentclass{beamer}
+\usepackage{xeCJK}
+% Setup Theme
+\usetheme{Madrid}
+% Title
+\title[标题缩写]{这是标题}
+\subtitle{副标题}
+\author[作者缩写]{这是作者}
+\institute[机构缩写]{
+    \inst{1}
+    第一机构（一行）\\
+    第一机构（二行）
+    \and
+    \inst{2}
+    第二机构（一行）\\
+    第二机构（二行）
+}
+\date[\today]{\today}
+% Document
+\begin{document}
+% TitlePage
+\begin{frame}
+\titlepage
+\end{frame}
+% Only a contents
+% \begin{frame}
+% \frametitle{目录}
+% \tableofcontents
+% \end{frame}
+% Contents before each section
+\AtBeginSection[]{
+    \begin{frame}
+    \frametitle{目录}
+    \tableofcontents[currentsection]
+    \end{frame}
+}
+% Pages
+% Section 1
+\section{第一节}
+\begin{frame}
+\frametitle{标题名称}
+下面是一个列表。
+\begin{itemize}
+\item<1-> 第一条
+\item<2-> 第二条
+\item<3> 第三条，但是会消失
+\item<4-> 第四条
+\end{itemize}
+\end{frame}
+% Section 2
+\section{第二节}
+\begin{frame}
+文字会 \pause
+
+一页一页 \pause
+
+出现
+\end{frame}
+% Section 2
+\section{第三节}
+\begin{frame}
+\frametitle{标题名称}
+这是一个
+\alert{重点标记}。
+
+\begin{block}{Remark}
+这是 Remark。
+\end{block}
+
+\begin{alertblock}{Important}
+这是重点。
+\end{alertblock}
+
+\begin{examples}
+这是例子。
+\end{examples}
+\end{frame}
+\end{document}

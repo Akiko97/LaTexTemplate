@@ -1,0 +1,40 @@
+%!TEX program = xelatex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                         %
+% Author: Gabriel Zhong                   %
+% Date: 2022/6/13                         %
+%                                         %
+% Comment:                                %
+% Sublime Text with LatexTools installed, %
+% use Command+B to complie                %
+%                   or                    %
+% use make to compile                     %
+%                                         %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{article}
+% Setup font
+\usepackage{fontspec}
+\setmainfont{SF Pro Text Regular}[
+	BoldFont = SF Pro Text Bold
+]
+\setsansfont{SF Pro Display Regular}[
+	BoldFont = SF Pro Text Bold
+]
+\setmonofont{SF Mono Regular}
+% Title
+\title{This is title}
+\author{Author}
+% Document
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+\part{Part 1}
+\section{Section 1}
+\subsection{SubSection 1.1}
+\subsubsection{SubSubSection 1.1.1}
+\paragraph{This} is a paragraph.
+\subparagraph{This} is a subparagraph.
+\end{document}
