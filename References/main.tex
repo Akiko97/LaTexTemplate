@@ -1,0 +1,32 @@
+%!TEX program = xelatex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                         %
+% Author: Gabriel Zhong                   %
+% Date: 2022/6/13                         %
+%                                         %
+% Comment:                                %
+% Sublime Text with LatexTools installed, %
+% use Command+B to complie                %
+%                   or                    %
+% use make to compile                     %
+%                                         %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{article}
+% Use reference Link
+% \usepackage[backref]{hyperref}
+% Document
+\begin{document}
+Cite CSAPP.
+\cite{CSAPP}
+
+Cite IPC.
+\cite{IPC}
+
+Cite CSAPP and IPC.
+\cite{CSAPP,IPC}
+% Reference
+\bibliographystyle{IEEEtran}
+\bibliography{ref}
+\end{document}
