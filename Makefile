@@ -1,4 +1,4 @@
-dirs:=English Chinese Japanese Slide
+dirs:=English Chinese Japanese Slide References
 
 all:
 	@for dir in $(dirs); do \
